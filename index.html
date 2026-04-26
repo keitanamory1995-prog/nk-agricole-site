@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>NK Agricole</title>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NK Agricole - Catalogue</title>
+  <style>
+    :root { --bg: #f7f9fc; --primary: #1f2937; --accent: #14532d; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background: var(--bg); }
+    header { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand span { font-size: 20px; font-weight: 700; color: var(--primary); letter-spacing: .2px; }
+    nav a { margin-left: 16px; text-decoration: none; color: #374151; font-weight: 600; }
+    nav a:hover { color: #000; }
+    .hero { padding: 48px 24px; background: linear-gradient(135deg, #f3f4f6, #e0f2fe); }
+    .hero h1 { margin: 0; font-size: 34px; color: #111827; }
+    .hero p { margin-top: 12px; color: #4b5563; max-width: 720px; }
+    .section { padding: 32px 24px; }
+    .section h2 { margin: 0 0 16px; color: #111827; font-size: 22px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+    .card h3 { margin: 0 0 8px; font-size: 18px; color: #111827; }
+    .card p { margin: 0; color: #4b5563; line-height: 1.4; }
+    .meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+    .price { font-weight: 700; color: var(--accent); }
+    .tag { font-size: 12px; background: #ecfdf3; color: #166534; border-radius: 999px; padding: 4px 10px; }
+    footer { padding: 16px 24px; border-top: 1px solid #e5e7eb; color: #6b7280; background: #fff; }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur NK Agricole</h1>
-  <h2>Nos produits</h2>
-  <div>
-    <h3>Produit 1</h3>
-    <p>Description du produit</p>
-    <p>Prix : 10€</p>
+<header>
+  <div class="brand"><span>NK Agricole</span></div>
+  <nav>
+    <a href="#gaz">Gaz</a>
+    <a href="#couches">Couches</a>
+    <a href="#parfums">Parfums</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Catalogue officiel</h1>
+  <p>Exemple de présentation. Pour commande ou devis, contactez le service NK Agricole.</p>
+</section>
+
+<section class="section" id="gaz">
+  <h2>Gaz</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Bouteille de gaz 6kg</h3>
+      <p>Livraison et reprise selon conditions. Usage domestique.</p>
+      <div class="meta"><span class="price">25€</span><span class="tag">Gaz</span></div>
+    </div>
   </div>
+</section>
+
+<section class="section" id="couches">
+  <h2>Couches</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Couches bébé – Pack 60</h3>
+      <p>Taille 3 (4-9kg). Absorption renforcée, jour & nuit.</p>
+      <div class="meta"><span class="price">18€</span><span class="tag">Couches</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="parfums">
+  <h2>Parfums</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Parfum (eau de toilette)</h3>
+      <p>Flacon 50ml. Références disponibles sur demande.</p>
+      <div class="meta"><span class="price">35€</span><span class="tag">Parfum</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 NK Agricole — Catalogue à titre d’exemple.
+</footer>
 </body>
 </html>
